@@ -44,6 +44,12 @@ Der Benutzer kann eine Reise und einen Zahnarzttermin auf zwei Wegen buchen:
 - **Sprache:** Java (OpenJDK 21)
 - **Datenbank:** (TBD - z.B. H2 für Dev, PostgreSQL für Prod)
 
+### KI & Chatbot
+- **Provider:** Google Vertex AI
+- **Model:** `gemini-3-pro-preview`
+- **Region:** `global`
+- **Authentifizierung:** Erfolgt über einen bereits im Kubernetes-Cluster vorhandenen ServiceAccount (Workload Identity).
+
 ### Infrastruktur
 - **Hosting:** Google Kubernetes Engine (GKE) Autopilot
 - **Ingress:** GCE Ingress
