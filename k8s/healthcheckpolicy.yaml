@@ -1,0 +1,20 @@
+apiVersion: networking.gke.io/v1
+kind: HealthCheckPolicy
+metadata:
+  name: variantec-backend-healthcheck
+  namespace: default
+spec:
+  default:
+    checkIntervalSec: 10
+    config:
+      httpHealthCheck:
+        port: 8080
+        requestPath: /api/bookings
+      type: HTTP
+    healthyThreshold: 1
+    timeoutSec: 5
+    unhealthyThreshold: 2
+  targetRef:
+    group: ""
+    kind: Service
+    name: variantec-backend

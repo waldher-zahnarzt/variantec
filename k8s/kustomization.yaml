@@ -3,7 +3,8 @@ kind: Kustomization
 resources:
 - backend.yaml
 - frontend.yaml
-- ingress.yaml
+- httproute.yaml
+- healthcheckpolicy.yaml
 images:
 - name: gcr.io/waldher-zahnarzt/variantec-backend
   newName: gcr.io/waldher-zahnarzt/variantec-backend

@@ -1,18 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend
+  name: variantec-frontend
   labels:
-    app: frontend
+    app: variantec
+    component: frontend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: frontend
+      app: variantec
+      component: frontend
   template:
     metadata:
       labels:
-        app: frontend
+        app: variantec
+        component: frontend
     spec:
       containers:
       - name: frontend
@@ -26,10 +29,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend
+  name: variantec-frontend
 spec:
   selector:
-    app: frontend
+    app: variantec
+    component: frontend
   ports:
   - port: 80
     targetPort: 3000
