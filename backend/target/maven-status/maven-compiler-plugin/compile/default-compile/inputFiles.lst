@@ -1,0 +1,6 @@
+/home/benjamin_google/variantec/backend/src/main/java/com/waldher/variantec/VariantecApplication.java
+/home/benjamin_google/variantec/backend/src/main/java/com/waldher/variantec/model/Booking.java
+/home/benjamin_google/variantec/backend/src/main/java/com/waldher/variantec/repository/BookingRepository.java
+/home/benjamin_google/variantec/backend/src/main/java/com/waldher/variantec/controller/ChatbotController.java
+/home/benjamin_google/variantec/backend/src/main/java/com/waldher/variantec/service/ChatbotService.java
+/home/benjamin_google/variantec/backend/src/main/java/com/waldher/variantec/controller/BookingController.java
