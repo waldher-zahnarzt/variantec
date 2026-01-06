@@ -1,0 +1,6 @@
+com/waldher/variantec/service/ChatbotService.class
+com/waldher/variantec/repository/BookingRepository.class
+com/waldher/variantec/controller/BookingController.class
+com/waldher/variantec/controller/ChatbotController.class
+com/waldher/variantec/model/Booking.class
+com/waldher/variantec/VariantecApplication.class
